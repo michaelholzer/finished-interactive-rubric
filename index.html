@@ -2,7 +2,74 @@
 	<html lang="en">
 		<head>
 			<title>Interactive Rubric V3</title>
-			<link rel="stylesheet" type="text/css" href="indexStyleSheet.css"/>
+			<style>
+				body{
+					cursor:default;
+					text-align:center;
+					font-family:Tahoma;}
+				table{
+					border-color:#AAAAAA;
+					background-color:#000000;
+					margin:auto;}
+				td{
+					min-width:45px;
+					max-width:200px;
+					min-height:20px;
+					padding:5px;
+					border-color:#AAAAAA;
+					border-width:2px;
+					cursor:pointer;}
+				tr{
+					padding:5px;
+					border-color:black;}
+				#aA{min-width:200px;}
+				#author{
+					background-color:#999988;
+					color:black;}
+				#publisher{
+					background-color:#999988;
+					color:black;}
+				#sourcesCited{
+					background-color:#999988;
+					color:black;}
+				#purpose{
+					background-color:#999988;
+					color:black;}
+				#date{
+					background-color:#999988;
+					color:black;}
+				#substance{
+					background-color:#999988;
+					color:black;}
+				#numbers{
+					background-color:#889999;
+					min-width:200px;
+					font-weight:thin;}
+				#botNumber{
+					background-color:#889999;
+					color:white;
+					text-align:left;
+					padding-left:15px;
+					font-size:30px;}
+				#score{
+					background-color:#889999;
+					color:white;
+					text-align:left;
+					padding-left:7px;}
+				#width{min-width:200px;}
+				#scoreTotal{margin:auto; width:1145px;}
+				#red{background-color:#FF0000; padding:10px; margin-bottom:0px; margin-top:0px;}
+				#orange{background-color:#FFA500; padding:10px; margin-bottom:0px; margin-top:0px;}
+				#yellow{background-color:#FFD700; padding:10px; margin-bottom:0px; margin-top:0px;}
+				#green{background-color:#008000; padding:10px; margin-bottom:20px; margin-top:0px;}
+				#N3{background-color:#008000;}
+				#N2{background-color:#FFD700;}
+				#N1{background-color:#FFA500;}
+				#N0{background-color:#FF0000;}
+				#side{background-color:#889999;}
+				#botButton{background-color:white; outline-width:3px; outline-style:solid; outline-color:#808080;}
+				#botButtons{margin:auto;}
+			</style>
 			<script type="text/javascript">
 				function GreenA(){
 					if(document.getElementById("authorDisplay").innerHTML == "3"){
