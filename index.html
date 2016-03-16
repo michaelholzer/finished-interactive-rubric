@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html lang="en">
+		<head>
+			<title>Interactive Rubric V3</title>
+			<link rel="stylesheet" type="text/css" href="irExternalStyleSheetBox.css"/>
+			<script type="text/javascript">
+				function GreenA(){
+					if(document.getElementById("authorDisplay").innerHTML == "3"){
+						document.getElementById("aA").style.background = "#999988";
+						document.getElementById("a3").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("aA").style.background = "#008000";
+						document.getElementById("a3").style.background = "#008000";
+						document.getElementById("a2").style.background = "#999988";
+						document.getElementById("a1").style.background = "#999988";
+						document.getElementById("a0").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowA(){
+					if(document.getElementById("authorDisplay").innerHTML == "2"){
+						document.getElementById("aA").style.background = "#999988";
+						document.getElementById("a2").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("aA").style.background = "#FFD700";
+						document.getElementById("a3").style.background = "#999988";
+						document.getElementById("a2").style.background = "#FFD700";
+						document.getElementById("a1").style.background = "#999988";
+						document.getElementById("a0").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangeA(){
+					if(document.getElementById("authorDisplay").innerHTML == "1"){
+						document.getElementById("aA").style.background = "#999988";
+						document.getElementById("a1").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("aA").style.background = "#FFA500";
+						document.getElementById("a3").style.background = "#999988";
+						document.getElementById("a2").style.background = "#999988";
+						document.getElementById("a1").style.background = "#FFA500";
+						document.getElementById("a0").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedA(){
+					if(document.getElementById("authorDisplay").innerHTML == "0"){
+						document.getElementById("aA").style.background = "#999988";
+						document.getElementById("a0").style.background = "#999988";
+						document.getElementById("authorDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("aA").style.background = "#FF0000";
+						document.getElementById("a3").style.background = "#999988";
+						document.getElementById("a2").style.background = "#999988";
+						document.getElementById("a1").style.background = "#999988";
+						document.getElementById("a0").style.background = "#FF0000";
+						document.getElementById("authorDisplay").innerHTML = "0";
+						addition();
+					}}
+				function GreenP(){
+					if(document.getElementById("publisherDisplay").innerHTML == "3"){
+						document.getElementById("pP").style.background = "#999988";
+						document.getElementById("p3").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("pP").style.background = "#008000";
+						document.getElementById("p3").style.background = "#008000";
+						document.getElementById("p2").style.background = "#999988";
+						document.getElementById("p1").style.background = "#999988";
+						document.getElementById("p0").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowP(){
+					if(document.getElementById("publisherDisplay").innerHTML == "2"){
+						document.getElementById("pP").style.background = "#999988";
+						document.getElementById("p2").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("pP").style.background = "#FFD700";
+						document.getElementById("p3").style.background = "#999988";
+						document.getElementById("p2").style.background = "#FFD700";
+						document.getElementById("p1").style.background = "#999988";
+						document.getElementById("p0").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangeP(){
+					if(document.getElementById("publisherDisplay").innerHTML == "1"){
+						document.getElementById("pP").style.background = "#999988";
+						document.getElementById("p1").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("pP").style.background = "#FFA500";
+						document.getElementById("p3").style.background = "#999988";
+						document.getElementById("p2").style.background = "#999988";
+						document.getElementById("p1").style.background = "#FFA500";
+						document.getElementById("p0").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedP(){
+					if(document.getElementById("publisherDisplay").innerHTML == "0"){
+						document.getElementById("pP").style.background = "#999988";
+						document.getElementById("p0").style.background = "#999988";
+						document.getElementById("publisherDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("pP").style.background = "#FF0000";
+						document.getElementById("p3").style.background = "#999988";
+						document.getElementById("p2").style.background = "#999988";
+						document.getElementById("p1").style.background = "#999988";
+						document.getElementById("p0").style.background = "#FF0000";
+						document.getElementById("publisherDisplay").innerHTML = "0";
+						addition();
+					}}
+				function GreenSC(){
+					if(document.getElementById("sourcesCitedDisplay").innerHTML == "3"){
+						document.getElementById("scSC").style.background = "#999988";
+						document.getElementById("sc3").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("scSC").style.background = "#008000";
+						document.getElementById("sc3").style.background = "#008000";
+						document.getElementById("sc2").style.background = "#999988";
+						document.getElementById("sc1").style.background = "#999988";
+						document.getElementById("sc0").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowSC(){
+					if(document.getElementById("sourcesCitedDisplay").innerHTML == "2"){
+						document.getElementById("scSC").style.background = "#999988";
+						document.getElementById("sc2").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("scSC").style.background = "#FFD700";
+						document.getElementById("sc3").style.background = "#999988";
+						document.getElementById("sc2").style.background = "#FFD700";
+						document.getElementById("sc1").style.background = "#999988";
+						document.getElementById("sc0").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangeSC(){
+					if(document.getElementById("sourcesCitedDisplay").innerHTML == "1"){
+						document.getElementById("scSC").style.background = "#999988";
+						document.getElementById("sc1").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("scSC").style.background = "#FFA500";
+						document.getElementById("sc3").style.background = "#999988";
+						document.getElementById("sc2").style.background = "#999988";
+						document.getElementById("sc1").style.background = "#FFA500";
+						document.getElementById("sc0").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedSC(){
+					if(document.getElementById("sourcesCitedDisplay").innerHTML == "0"){
+						document.getElementById("scSC").style.background = "#999988";
+						document.getElementById("sc0").style.background = "#999988";
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("scSC").style.background = "#FF0000";
+						document.getElementById("sc3").style.background = "#999988";
+						document.getElementById("sc2").style.background = "#999988";
+						document.getElementById("sc1").style.background = "#999988";
+						document.getElementById("sc0").style.background = "#FF0000";
+						document.getElementById("sourcesCitedDisplay").innerHTML = "0";
+						addition();
+					}}
+				function GreenPP(){
+					if(document.getElementById("purposeDisplay").innerHTML == "3"){
+						document.getElementById("ppPP").style.background = "#999988";
+						document.getElementById("pp3").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("ppPP").style.background = "#008000";
+						document.getElementById("pp3").style.background = "#008000";
+						document.getElementById("pp2").style.background = "#999988";
+						document.getElementById("pp1").style.background = "#999988";
+						document.getElementById("pp0").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowPP(){
+					if(document.getElementById("purposeDisplay").innerHTML == "2"){
+						document.getElementById("ppPP").style.background = "#999988";
+						document.getElementById("pp2").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("ppPP").style.background = "#FFD700";
+						document.getElementById("pp3").style.background = "#999988";
+						document.getElementById("pp2").style.background = "#FFD700";
+						document.getElementById("pp1").style.background = "#999988";
+						document.getElementById("pp0").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangePP(){
+					if(document.getElementById("purposeDisplay").innerHTML == "1"){
+						document.getElementById("ppPP").style.background = "#999988";
+						document.getElementById("pp1").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("ppPP").style.background = "#FFA500";
+						document.getElementById("pp3").style.background = "#999988";
+						document.getElementById("pp2").style.background = "#999988";
+						document.getElementById("pp1").style.background = "#FFA500";
+						document.getElementById("pp0").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedPP(){
+					if(document.getElementById("purposeDisplay").innerHTML == "0"){
+						document.getElementById("ppPP").style.background = "#999988";
+						document.getElementById("pp0").style.background = "#999988";
+						document.getElementById("purposeDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("ppPP").style.background = "#FF0000";
+						document.getElementById("pp3").style.background = "#999988";
+						document.getElementById("pp2").style.background = "#999988";
+						document.getElementById("pp1").style.background = "#999988";
+						document.getElementById("pp0").style.background = "#FF0000";
+						document.getElementById("purposeDisplay").innerHTML = "0";
+						addition();
+					}}
+				function GreenD(){
+					if(document.getElementById("dateDisplay").innerHTML == "3"){
+						document.getElementById("dD").style.background = "#999988";
+						document.getElementById("d3").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("dD").style.background = "#008000";
+						document.getElementById("d3").style.background = "#008000";
+						document.getElementById("d2").style.background = "#999988";
+						document.getElementById("d1").style.background = "#999988";
+						document.getElementById("d0").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowD(){
+					if(document.getElementById("dateDisplay").innerHTML == "2"){
+						document.getElementById("dD").style.background = "#999988";
+						document.getElementById("d2").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("dD").style.background = "#FFD700";
+						document.getElementById("d3").style.background = "#999988";
+						document.getElementById("d2").style.background = "#FFD700";
+						document.getElementById("d1").style.background = "#999988";
+						document.getElementById("d0").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangeD(){
+					if(document.getElementById("dateDisplay").innerHTML == "1"){
+						document.getElementById("dD").style.background = "#999988";
+						document.getElementById("d1").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("dD").style.background = "#FFA500";
+						document.getElementById("d3").style.background = "#999988";
+						document.getElementById("d2").style.background = "#999988";
+						document.getElementById("d1").style.background = "#FFA500";
+						document.getElementById("d0").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedD(){
+					if(document.getElementById("dateDisplay").innerHTML == "0"){
+						document.getElementById("dD").style.background = "#999988";
+						document.getElementById("d0").style.background = "#999988";
+						document.getElementById("dateDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("dD").style.background = "#FF0000";
+						document.getElementById("d3").style.background = "#999988";
+						document.getElementById("d2").style.background = "#999988";
+						document.getElementById("d1").style.background = "#999988";
+						document.getElementById("d0").style.background = "#FF0000";
+						document.getElementById("dateDisplay").innerHTML = "0";
+						addition();
+					}}
+				function GreenS(){
+					if(document.getElementById("substanceDisplay").innerHTML == "3"){
+						document.getElementById("sS").style.background = "#999988";
+						document.getElementById("s3").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("sS").style.background = "#008000";
+						document.getElementById("s3").style.background = "#008000";
+						document.getElementById("s2").style.background = "#999988";
+						document.getElementById("s1").style.background = "#999988";
+						document.getElementById("s0").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = "3";
+						addition();
+					}}
+				function YellowS(){
+					if(document.getElementById("substanceDisplay").innerHTML == "2"){
+						document.getElementById("sS").style.background = "#999988";
+						document.getElementById("s2").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("sS").style.background = "#FFD700";
+						document.getElementById("s3").style.background = "#999988";
+						document.getElementById("s2").style.background = "#FFD700";
+						document.getElementById("s1").style.background = "#999988";
+						document.getElementById("s0").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = "2";
+						addition();
+					}}
+				function OrangeS(){
+					if(document.getElementById("substanceDisplay").innerHTML == "1"){
+						document.getElementById("sS").style.background = "#999988";
+						document.getElementById("s1").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("sS").style.background = "#FFA500";
+						document.getElementById("s3").style.background = "#999988";
+						document.getElementById("s2").style.background = "#999988";
+						document.getElementById("s1").style.background = "#FFA500";
+						document.getElementById("s0").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = "1";
+						addition();
+					}}
+				function RedS(){
+					if(document.getElementById("substanceDisplay").innerHTML == "0"){
+						document.getElementById("sS").style.background = "#999988";
+						document.getElementById("s0").style.background = "#999988";
+						document.getElementById("substanceDisplay").innerHTML = null;
+						addition();
+					}else{
+						document.getElementById("sS").style.background = "#FF0000";
+						document.getElementById("s3").style.background = "#999988";
+						document.getElementById("s2").style.background = "#999988";
+						document.getElementById("s1").style.background = "#999988";
+						document.getElementById("s0").style.background = "#FF0000";
+						document.getElementById("substanceDisplay").innerHTML = "0";
+						addition();
+					}}
+				function addition(){
+					var author = document.getElementById("authorDisplay").innerHTML;
+					var publisher = document.getElementById("publisherDisplay").innerHTML;
+					var sourcesCited = document.getElementById("sourcesCitedDisplay").innerHTML;
+					var purpose = document.getElementById("purposeDisplay").innerHTML;
+					var date = document.getElementById("dateDisplay").innerHTML;
+					var substance = document.getElementById("substanceDisplay").innerHTML;
+					switch(author){
+						case "3": var A = 3; break; case "2": var A = 2; break; case "1": var A = 1; break; case "0": var A = 0; break; default: var A = null;
+					}
+					switch(publisher){
+						case "3": var P = 3; break; case "2": var P = 2; break; case "1": var P = 1; break; case "0": var P = 0; break; default: var P = null;
+					}
+					switch(sourcesCited){
+						case "3": var SC = 3; break; case "2": var SC = 2; break; case "1": var SC = 1; break; case "0": var SC = 0; break; default: var SC = null;
+					}
+					switch(purpose){
+						case "3": var PP = 3; break; case "2": var PP = 2; break; case "1": var PP = 1; break; case "0": var PP = 0; break; default: var PP = null;
+					}
+					switch(date){
+						case "3": var D = 3; break; case "2": var D = 2; break; case "1": var D = 1; break; case "0": var D = 0; break; default: var D = null;
+					}
+					switch(substance){
+						case "3": var S = 3; break; case "2": var S = 2; break; case "1": var S = 1; break; case "0": var S = 0; break; default: var S = null;
+					}
+					var total = A + P + SC + PP + D + S;
+					document.getElementById("total").innerHTML = total;
+					if(total >=0 && total <=6){
+						red();
+					}
+					if(total >=7 && total <=10){
+						orange();
+					}
+					if(total >=11 && total <=14){
+						yellow();
+					}
+					if(total >=15 && total <=18){
+						green();
+					}
+					if(A == null && P == null && SC == null && PP == null && D == null && S == null){
+						document.getElementById("red").style.background = "#FF0000";
+						document.getElementById("orange").style.background = "#FFA500";
+						document.getElementById("yellow").style.background = "#FFD700";
+						document.getElementById("green").style.background = "#008000";
+						document.getElementById("botNumber").style.color = "#FFFFFF"
+					}
+				}
+				function red(){
+					document.getElementById("red").style.background = "#FF0000";
+					document.getElementById("orange").style.background = "#FFFFFF";
+					document.getElementById("yellow").style.background = "#FFFFFF";
+					document.getElementById("green").style.background = "#FFFFFF";
+					document.getElementById("botNumber").style.color = "#FF0000";}
+				function orange(){
+					document.getElementById("red").style.background = "#FFFFFF";
+					document.getElementById("orange").style.background = "#FFA500";
+					document.getElementById("yellow").style.background = "#FFFFFF";
+					document.getElementById("green").style.background = "#FFFFFF";
+					document.getElementById("botNumber").style.color = "#FFA500";}
+				function yellow(){
+					document.getElementById("red").style.background = "#FFFFFF";
+					document.getElementById("orange").style.background = "#FFFFFF";
+					document.getElementById("yellow").style.background = "#FFD700";
+					document.getElementById("green").style.background = "#FFFFFF";
+					document.getElementById("botNumber").style.color = "#FFD700";}
+				function green(){
+					document.getElementById("red").style.background = "#FFFFFF";
+					document.getElementById("orange").style.background = "#FFFFFF";
+					document.getElementById("yellow").style.background = "#FFFFFF";
+					document.getElementById("green").style.background = "#008000";
+					document.getElementById("botNumber").style.color = "#008000";}
+				function eaThree(){
+					var author = document.getElementById("authorDisplay").innerHTML;
+					var publisher = document.getElementById("publisherDisplay").innerHTML;
+					var sourcesCited = document.getElementById("sourcesCitedDisplay").innerHTML;
+					var purpose = document.getElementById("purposeDisplay").innerHTML;
+					var date = document.getElementById("dateDisplay").innerHTML;
+					var substance = document.getElementById("substanceDisplay").innerHTML;
+					if(author == "3" && publisher == "3" && sourcesCited == "3" && purpose == "3" && date == "3" && substance == "3"){
+
+					}else{
+						document.getElementById("authorDisplay").innerHTML = null;
+						document.getElementById("publisherDisplay").innerHTML = null;
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						document.getElementById("purposeDisplay").innerHTML = null;
+						document.getElementById("dateDisplay").innerHTML = null;
+						document.getElementById("substanceDisplay").innerHTML = null;
+					}
+					GreenA(); GreenP(); GreenSC(); GreenPP(); GreenD(); GreenS(); addition();}
+				function eaTwo(){
+					var author = document.getElementById("authorDisplay").innerHTML;
+					var publisher = document.getElementById("publisherDisplay").innerHTML;
+					var sourcesCited = document.getElementById("sourcesCitedDisplay").innerHTML;
+					var purpose = document.getElementById("purposeDisplay").innerHTML;
+					var date = document.getElementById("dateDisplay").innerHTML;
+					var substance = document.getElementById("substanceDisplay").innerHTML;
+					if(author == "2" && publisher == "2" && sourcesCited == "2" && purpose == "2" && date == "2" && substance == "2"){
+
+					}else{
+						document.getElementById("authorDisplay").innerHTML = null;
+						document.getElementById("publisherDisplay").innerHTML = null;
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						document.getElementById("purposeDisplay").innerHTML = null;
+						document.getElementById("dateDisplay").innerHTML = null;
+						document.getElementById("substanceDisplay").innerHTML = null;
+					}
+					YellowA(); YellowP(); YellowSC(); YellowPP(); YellowD(); YellowS(); addition();}
+				function eaOne(){
+					var author = document.getElementById("authorDisplay").innerHTML;
+					var publisher = document.getElementById("publisherDisplay").innerHTML;
+					var sourcesCited = document.getElementById("sourcesCitedDisplay").innerHTML;
+					var purpose = document.getElementById("purposeDisplay").innerHTML;
+					var date = document.getElementById("dateDisplay").innerHTML;
+					var substance = document.getElementById("substanceDisplay").innerHTML;
+					if(author == "1" && publisher == "1" && sourcesCited == "1" && purpose == "1" && date == "1" && substance == "1"){
+
+					}else{
+						document.getElementById("authorDisplay").innerHTML = null;
+						document.getElementById("publisherDisplay").innerHTML = null;
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						document.getElementById("purposeDisplay").innerHTML = null;
+						document.getElementById("dateDisplay").innerHTML = null;
+						document.getElementById("substanceDisplay").innerHTML = null;
+					}
+					OrangeA(); OrangeP(); OrangeSC(); OrangePP(); OrangeD(); OrangeS(); addition();}
+				function eaZero(){
+					var author = document.getElementById("authorDisplay").innerHTML;
+					var publisher = document.getElementById("publisherDisplay").innerHTML;
+					var sourcesCited = document.getElementById("sourcesCitedDisplay").innerHTML;
+					var purpose = document.getElementById("purposeDisplay").innerHTML;
+					var date = document.getElementById("dateDisplay").innerHTML;
+					var substance = document.getElementById("substanceDisplay").innerHTML;
+					if(author == "0" && publisher == "0" && sourcesCited == "0" && purpose == "0" && date == "0" && substance == "0"){
+
+					}else{
+						document.getElementById("authorDisplay").innerHTML = null;
+						document.getElementById("publisherDisplay").innerHTML = null;
+						document.getElementById("sourcesCitedDisplay").innerHTML = null;
+						document.getElementById("purposeDisplay").innerHTML = null;
+						document.getElementById("dateDisplay").innerHTML = null;
+						document.getElementById("substanceDisplay").innerHTML = null;
+					}
+					RedA(); RedP(); RedSC(); RedPP(); RedD(); RedS(); addition();}
+			</script>
+		</head>
+		<body>
+			<table border="2">
+				<tr>
+					<td id="score" colspan="2" style="cursor:default;">Score</td>
+					<td id="N3" onClick="eaThree();" style="cursor:default;">3</td>
+					<td id="N2" onClick="eaTwo();"   style="cursor:default;">2</td>
+					<td id="N1" onClick="eaOne();"   style="cursor:default;">1</td>
+					<td id="N0" onClick="eaZero();"  style="cursor:default;">0</td>
+				</tr>
+				<tr id="author">
+					<td id="side" style="cursor:default;"><div id="authorDisplay" ></div></td>
+					<td style="cursor:default;" id="aA"><u><strong>Author:</strong></u><br />What are the author's credentials and affiliation? Is the author an expert?</td>
+					<td onClick="GreenA()"  id="a3">The author's credentials indicate that he/she is an expert on this topic. The author gives contact info or professional affiliation.</td>
+					<td onClick="YellowA()" id="a2">The author is named but credentials and/or contact info (online sources) is incomplete.</td>
+					<td onClick="OrangeA()" id="a1">The author is unnamed and/or no credentials are given.</td>
+					<td onClick="RedA()"    id="a0">The author is named, but is clearly not an expert on the topic (published by student or fans).</td>
+				</tr>
+				<tr id="publisher">
+					<td id="side" style="cursor:default;"><div id="publisherDisplay" ></div></td>
+					<td style="cursor:default;" id="pP"><u><strong>Publisher:</strong></u><br />Is the source published by a reputable publisher or organization?</td>
+					<td onClick="GreenP()"  id="p3">Published by:<br />*U.S. Government (.gov)<br />*Scholarly Journal or in a Reference or academic book</td>
+					<td onClick="YellowP()" id="p2">Published by a known:<br />*organization<br />*university<br />*business<br />*magazine/newspaper or in a print book</td>
+					<td onClick="OrangeP()" id="p1">Published by:<br />*a K-12 school<br />*an unknown business (.com)<br />*an unknown organization (.org).</td>
+					<td onClick="RedP()"    id="p0">Self-published:<br />blogs, personal web pages, etc.<br />Look for the symbols ~% or the words "users" "members" etc. in the URL</td>
+				</tr>
+				<tr id="sourcesCited">
+					<td id="side" style="cursor:default;"><div id="sourcesCitedDisplay" ></div></td>
+					<td style="cursor:default;" id="scSC"><u><strong>Sources Cited:</strong></u><br />Is the information cited?</td>
+					<td onClick="GreenSC()"  id="sc3">The work is original research/info by a reputable source.  There is a Works Cited list and/or a Bibliography.</td>
+					<td onClick="YellowSC()" id="sc2">The work is a compilation of research/info by a reputable source. No Works Cited information as a list.</td>
+					<td onClick="OrangeSC()" id="sc1">There is a statement about the source of information embedded in the source, but no Works Cited list.</td>
+					<td onClick="RedSC()"    id="sc0">There is a statement about the source of information embedded in the source, but no Works Cited list.</td>
+				</tr>
+				<tr id="purpose">
+					<td id="side" style="cursor:default;"><div id="purposeDisplay" ></div></td>
+					<td style="cursor:default;" id="ppPP"><u><strong>Purpose:</strong></u><br />Why was this information published?</td>
+					<td onClick="GreenPP()"  id="pp3">To promote scholarly research.</td>
+					<td onClick="YellowPP()" id="pp2">To provide factual information. Some opinion may be included.</td>
+					<td onClick="OrangePP()" id="pp1">To sell something, to persuade, or to promote an idea.</td>
+					<td onClick="RedPP()"    id="pp0">For personal or entertainment purposes.</td>
+				</tr>
+				<tr id="date">
+					<td id="side" style="cursor:default;"><div id="dateDisplay" ></div></td>
+					<td style="cursor:default;" id="dD"><u><strong>Date:</strong></u><br />How current is the information?</td>
+					<td onClick="GreenD()"  id="d3"> Online:<br />The info is less than 1 year old.<br />Print:<br />The info is less than 3 years old.</td>
+					<td onClick="YellowD()" id="d2"> Online:<br />The info is less than 3 years old.<br />Print:<br />The information is more than 3 years old, but is not necessarily out of date.</td>
+					<td onClick="OrangeD()" id="d1"> The information is more than five years old.</td>
+					<td onClick="RedD()"    id="d0"> There is no indication of when the information was published.</td>
+				</tr>
+				<tr id="substance">
+					<td id="side" style="cursor:default;"><div id="substanceDisplay" ></div></td>
+					<td style="cursor:default;" id="sS"><u><strong>Substance:</strong></u></td>
+					<td onClick="GreenS()"  id="s3"> Depth of coverage needed for your purpose and written at a college or professional level.</td>
+					<td onClick="YellowS()" id="s2"> Written for the general public.</td>
+					<td onClick="OrangeS()" id="s1"> Lacking the depth needed for your purpose.</td>
+					<td onClick="RedS()"    id="s0"> No depth, contains excessive colloquialisms, slang, use of "I"</td>
+				</tr>
+				<tr>
+					<td id="botNumber" colspan="6" style="cursor:default;"><div id="total">0</div></td>
+				</tr>
+			</table>
+			<div id="scoreTotal">
+				<h4>Score Totals:</h4>
+				<h5 id="red">0-6: This source is highly questionable. Should not be used in research without suitable justification. (Attach your reasons for using a source with this score).</h5>
+				<h5 id="orange">7-10: The site may be an acceptable starting point for gathering information, but may not be suitable as a cited source in a research project.</h5>
+				<h5 id="yellow">11-14: Good source for research. Information should be confirmed in other sources.</h5>
+				<h5 id="green">15-18: Excellent source for research purposes.</h5>
+			</div>
+			<form name="botButtons1" id="botButtons"><input id="botButton" name="reset" type="button" onClick="history.go(0)" value="Reset" style="cursor:pointer;" /></form><br />
+			<div id="notification"></div>
+		</body>
+	</html>
